@@ -607,6 +607,10 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {},
         tailwindcss = {},
+        intelephense = {},
+        html = {
+          filetypes = { 'html', 'php' },
+        },
         --
 
         lua_ls = {
@@ -623,6 +627,7 @@ require('lazy').setup({
             },
           },
         },
+        cssls = {},
       }
 
       -- Ensure the servers and tools above are installed
