@@ -628,6 +628,17 @@ require('lazy').setup({
           },
         },
         cssls = {},
+        dockerls = {},
+        yamlls = {
+          settings = {
+            yaml = {
+              keyOrdering = false,
+              schemas = {
+                ['https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json'] = 'docker-compose*.yml',
+              },
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
